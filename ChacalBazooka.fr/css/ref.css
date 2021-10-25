@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp');
+
+body {
+	margin: 0;
+	margin-top: 120px;
+	width: 100%;
+}
+
+.titre {
+	font-family: 'MedievalSharp', arial;
+}
+
+.citation {
+	font-family: 'Brush Script MT', cursive;
+}

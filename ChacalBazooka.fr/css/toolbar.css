@@ -1,0 +1,47 @@
+/* Bare de navigation */
+
+header {
+	background-color: #c9ae73;
+	position: fixed; /*	La bare ne bouge pas quand on scroll*/
+	/* Position absolue de la bare (en haut) */
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+nav {
+	font-size: 2em;
+	max-width: 12000px;
+	margin: 0 0;
+}
+
+nav a {
+	padding: 0;
+	text-decoration: none;
+	line-height: 3.3em;
+	display: inline-block;
+}
+
+nav a:hover {
+	background-color: #c2a361;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+nav a span {
+	color: #FFFFFF;
+	font-family: cursive, sans-serif;
+	font-weight: 300;
+	margin: 0 0.7em;
+	position: relative;
+}
+
+nav a.active {
+	/*mettre en avant la case de la page ouverte*/
+	background-color: #5D6D7E;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+nav a.active:hover {
+	/*quand on passe la souris sur la case de la page ouverte*/
+	background-color: #2E4053;
+}
