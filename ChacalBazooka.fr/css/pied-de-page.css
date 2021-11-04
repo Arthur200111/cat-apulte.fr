@@ -1,5 +1,5 @@
 footer {
-	background-color: #088028;
+	background-color: var(--footer-bg-color);
 	padding: 15px 0;
 	display: grid;	
 	position: relative;
@@ -59,17 +59,17 @@ footer div div {
 }
 
 .facebook {
-    color: #4e64b5;
+    color: var(--fb-color);
 }
 
 .fa-envelope {
-    color: #00aced;
+    color: var(--mail-color);
 }
 .fa-instagram {
-    color: #9a8f62;
+    color: var(--insta-color);
 }
 .fa-youtube {
-    color: #c82929;
+    color: var(--yt-color);
 }
 
 a.social-items:hover {

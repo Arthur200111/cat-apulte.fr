@@ -1,9 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=MedievalSharp');
 
+html {
+	--body-bg-color : #BED3E9; /*couleur de fond du site*/
+	--header-bg-color : #673AB7; /*couleur de la bare de navigation*/
+	--active-header-bg-color : blueviolet; /*couleur de l'onglet lorsqu'on est sur la page*/
+	--hover-header-bg-color : #2E4053; /*couleur de l'onglet lorsque l'on passe la souris dessus*/
+  	--splash-bg-color : #368887; /*couleur du menu quand l'écran est petit*/
+  	--footer-bg-color : #088028; /*couleur de fond du pied de page*/
+  	--fb-color : #4e64b5; /*couleur du logo fg*/
+  	--mail-color : #00aced; /*mail*/
+  	--insta-color : #9a8f62; /*insta*/
+  	--yt-color : #c82929; /*yt*/
+}
+
 body {
 	margin: 0;
-	margin-top: 120px;
 	width: 100%;
+	background-color: var(--body-bg-color);
 }
 
 .titre {

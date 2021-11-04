@@ -4,29 +4,46 @@
 	<meta charset="utf-8"/>
 	<script src="https://kit.fontawesome.com/05afd17fa7.js" crossorigin="anonymous"></script>
 	<title>Accueil - Chacal Bazooka</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="css/toolbar.css"/>
 	<link rel="stylesheet" href="css/pied-de-page.css"/>
 	<link rel="stylesheet" href="css/ref.css"/>
 </head>
 <body>
-	<header>
-		<nav>
-			<a href="home.html" class = "active">
-				<span class = "titre">Chacal Bazooka</span>
-			</a>
+	<header class="header" role="banner">
+	    
+	    <nav id="nav" class="nav" role="navigation">
 
-			<a href="allos.html">
-				<span>Allos</span>
-			</a>
-
-			<a href="membres.html">
-				<span>Membres</span>
-			</a>
-
-			<a href="evenements.html">
-				<span>Evénements</span>
-			</a>
-		</nav>
+			<a href="home.html" id = "active"><span class = "titre">Chacal Bazooka</span></a>
+	      
+	      <!-- ACTUAL NAVIGATION MENU -->
+	    	<ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
+	        	<li class="nav__item"><a href="allos.html" class="nav__link">Allos</a></li>
+	        	<li class="nav__item"><a href="membres.html" class="nav__link">Membres</a></li>
+	        	<li class="nav__item"><a href="evenements.html" class="nav__link">Events</a></li>
+	    	</ul>
+	    	
+	    	<!-- MENU TOGGLE BUTTON -->
+	      	<a href="#nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
+	        	<svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+	        		<title>Toggle Menu</title>
+	        	  	<g>
+	            		<line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5"/>
+	            		<line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+	            		<line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+	            		<line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5"/>
+	            		<circle class="menuicon__circle" r="23" cx="25" cy="25" />
+	          		</g>
+	        	</svg>
+	      	</a>
+	      
+	      	<!-- ANIMATED BACKGROUND ELEMENT -->
+	      	<div class="splash"></div>
+	      
+	    </nav>
+	    
 	</header>
 
 	<main>
@@ -64,6 +81,8 @@
 			</div>
 		</div>
 	</footer>
+
+	<script  src="js/script.js"></script>
 
 </body>
 </html>
