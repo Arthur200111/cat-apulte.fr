@@ -1,0 +1,181 @@
+body {
+  background: #444;
+}
+p {
+  font-size: 1.2em;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+.corpo {
+    margin: 0px auto 0px auto;
+    width: 100%;
+    height: 100vh;
+    background: url("../data/main_img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  /* Reset CSS */
+  
+  *,
+  *:after,
+  *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+.menu-txt{
+  visibility: hidden;
+  opacity: 0;
+  color: #fff;
+  transition: opacity .7s;
+  text-decoration: none;
+  position: relative;
+  font-size: 22px;
+  right: 40.5%;
+  top: 12px;
+  position: fixed;
+  z-index: 2;
+}
+ input[type=checkbox], label{
+  color: #fff;
+  position: fixed;
+  font-size: 30px;
+  right: 20px;
+  top: 6px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+}
+  /* Fundo do menu */
+  nav#whole-menu {
+    position: fixed;
+  }
+
+  .menu {
+    background: transparent;
+    padding-left: 100px;
+    width: 100%;
+    height: 58px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  .menu.black  {
+    background: #000;
+  }
+  /* Remove as bolinhas do lado das listas */
+  
+  .menu .menu-list,
+  .menu .sub-menu {
+    list-style: none;
+  }
+  /* Configura todos os links do nosso menu */
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+  }
+  /* Centralizar o menu */
+  
+  .menu > ul {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /* Faz os <li>s ficarem na horizontal */
+  
+  .menu > .menu-list > li {
+    float: left;
+    position: relative;
+    transition: opacity .7s;
+  }
+  /* Configura os links do menu principal */
+  
+  .menu > .menu-list > li > a {
+    padding: 20px;
+    margin: 0 0px;
+  }
+  /* Configura o fundo do menu principal quando com mouse hover */
+  
+  .menu > .menu-list > li:hover a {
+    background: #555;
+    color: #98f90f;
+  }
+  /* Mostra o submenu no evento de mouse hover */
+  
+  .menu > .menu-list > li:hover > .sub-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+  /* Configura o estilo do submenu */
+  
+  .menu > .menu-list > li > .sub-menu {
+    position: absolute;
+    top: 58px;
+    left: 0px;
+    background: #444;
+    min-width: 200px;
+    transition: all .5s;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+  }
+  /* Configura os links do submenu */
+  
+  .menu > .menu-list > li > .sub-menu > li > a {
+    padding: 10px 20px;
+  }
+.menu > .menu-list > li > .sub-menu > li > a:hover {
+  color: #fff;
+  }
+  /* Clearfix para o menu */
+  
+  .menu:after {
+    content: '.';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+
+@media screen and (max-width: 720px){
+  .menu-list {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+    top: 58px;
+    width: 100%;
+    transition: opacity .5s;
+  }
+  .menu-list li {
+    background: transparent;
+    text-align: center;
+    width: 100%;
+  }
+  .menu-list li .sub-menu {
+    margin-left: auto;
+    margin-left: auto;
+  }
+  .menu-txt, label {
+    visibility: visible;
+    opacity: 1;
+  }
+  input[type=checkbox]:checked ~ .menu > .menu-list {
+    visibility: visible;
+    opacity: 1;
+  }
+}
