@@ -16,7 +16,8 @@ html {
 body {
 	margin: 0;
 	width: 100%;
-	background-color: var(--body-bg-color);
+	/*background-color: var(--body-bg-color);*/
+	background: linear-gradient(to top, rgba(255, 0, 94, 0.14), #444, rgba(255, 9, 9, 0.12941176470588237)) ;
 }
 
 body .main_img {
@@ -26,6 +27,11 @@ body .main_img {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	display: block;
+}
+
+body main {
+	margin-top: 100px;
+	border-top-style: ;
 }
 
 .titre {

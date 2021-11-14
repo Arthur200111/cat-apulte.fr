@@ -7,44 +7,41 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-	<link rel="stylesheet" href="css/toolbar.css"/>
 	<link rel="stylesheet" href="css/pied-de-page.css"/>
 	<link rel="stylesheet" href="css/ref.css"/>
+  <link rel="stylesheet" href="css/toolbar2.css">
+
 </head>
 <body>
-	<header class="header" role="banner">
-	    
-	    <nav id="nav" class="nav" role="navigation">
+<!-- partial:index.partial.html -->
+<meta name=viewport content="width=device-width, initial-scale=1">
 
-			<a href="home.html"><span class = "titre">Chacal Bazooka</span></a>
-	      
-	      <!-- ACTUAL NAVIGATION MENU -->
-	    	<ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
-	        	<li class="nav__item"><a href="allos.html" class="nav__link">Allos</a></li>
-	        	<li class="nav__item"><a href="membres.html" class="nav__link">Membres</a></li>
-	        	<li class="nav__item"><a href="evenements.html" class="nav__link" id = "active">Events</a></li>
-	    	</ul>
-	    	
-	    	<!-- MENU TOGGLE BUTTON -->
-	      	<a href="#nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
-	        	<svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-	        		<title>Toggle Menu</title>
-	        	  	<g>
-	            		<line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5"/>
-	            		<line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
-	            		<line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
-	            		<line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5"/>
-	            		<circle class="menuicon__circle" r="23" cx="25" cy="25" />
-	          		</g>
-	        	</svg>
-	      	</a>
-	      
-	      	<!-- ANIMATED BACKGROUND ELEMENT -->
-	      	<div class="splash"></div>
-	      
-	    </nav>
-	    
-	</header>
+<header class="corpo">
+  
+  <nav id="whole-menu">
+    
+    <a href="#" class="menu-txt">Chacal Bazooka</a>
+    
+    <label for="menu">☰</label>
+    <input type="checkbox" id="menu">
+    
+    <div class="menu">
+      <ul class="menu-list">
+        <li><a href="index.html">Chacal Bazooka</a></li>
+        <li><a href="allos.html">Allos</a></li>
+        <li><a href="evenements.html">Evénements</a></li>
+        <li>
+          <a href="#">Liste</a>
+          <ul class="sub-menu">
+            <li> <a href="membres.html">Membres</a></li>
+            <li> <a href="#">Film de liste</a></li>
+            <li> <a href="#">Programme</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
 	<main>
 		<h1>Les événements</h1>
@@ -82,7 +79,6 @@
 		</div>
 	</footer>
 
-	<script  src="js/script.js"></script>
-
+  <script  src="js/toolbar2.js"></script>
 </body>
 </html>

@@ -1,11 +1,8 @@
-// Scrolling Effect
-$(window).on("scroll", function() {
-      console.log( "ready!" );
-      if($(window).scrollTop()) {
-            $('.menu').addClass('black');
+let menu = document.querySelector('.menu');
+document.addEventListener('scroll', function (e) {
+      if (document.documentElement.scrollTop === 0) {
+            menu.classList.remove('black');
+      } else {
+            menu.classList.add('black');
       }
-
-      else {
-      $('.menu').removeClass('black');
-      }
-})
+});

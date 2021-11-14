@@ -1,6 +1,5 @@
 const nav = document.querySelector('#nav');
 const menu = document.querySelector('#menu');
-const menuToggle = document.querySelector('.nav__toggle');
 let isMenuOpen = false;
 
 
