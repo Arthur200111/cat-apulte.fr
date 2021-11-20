@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=MedievalSharp');
+@font-face {
+	font-family: 'Ghotic';
+	src:  url("../data/font/gothicg_.ttf");
+}
+
+p {
+  font-size: 1.2em;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
 
 html {
-	--body-bg-color : #BED3E9; /*couleur de fond du site*/
+	--body-bg-color : #444; /*couleur de fond du site*/
 	--header-bg-color : #673AB7; /*couleur de la bare de navigation*/
 	--active-header-bg-color : blueviolet; /*couleur de l'onglet lorsqu'on est sur la page*/
 	--hover-header-bg-color : #2E4053; /*couleur de l'onglet lorsque l'on passe la souris dessus*/
-  	--splash-bg-color : #368887; /*couleur du menu quand l'écran est petit*/
   	--footer-bg-color : #088028; /*couleur de fond du pied de page*/
   	--fb-color : #4e64b5; /*couleur du logo fg*/
   	--mail-color : #00aced; /*mail*/
@@ -16,8 +26,7 @@ html {
 body {
 	margin: 0;
 	width: 100%;
-	/*background-color: var(--body-bg-color);*/
-	background: linear-gradient(to top, rgba(255, 0, 94, 0.14), #444, rgba(255, 9, 9, 0.12941176470588237)) ;
+	background-color: var(--body-bg-color);
 }
 
 body .main_img {
@@ -35,7 +44,7 @@ body main {
 }
 
 .titre {
-	font-family: 'MedievalSharp', arial;
+	font-family: 'Ghotic','MedievalSharp', arial;
 }
 
 .citation {
