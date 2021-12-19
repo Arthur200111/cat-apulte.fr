@@ -1,0 +1,95 @@
+.container,.liste{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.liste{
+	display: flex;
+	flex-direction: column;
+}
+.liste div {
+	display: flex;
+	flex-direction: row;
+	margin: 10px auto;
+}
+
+.pres{
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+}
+
+.liste a, .liste p {
+	display: block;
+	text-align: center;
+}
+
+.liste a {
+	width: 400px;
+	height: 200px;
+	text-align: center;
+	background-size: cover;
+	background-position: center;
+	border-radius: 5%;
+	transition: transform .2s;
+	text-decoration: none;
+	color: whitesmoke;
+	margin: 0 30px;
+}
+
+.liste a:hover, iframe:hover {
+	transform: scale(1.12);
+	box-shadow: 0px 10px 13px -7px #000000, 0px 0px 15px 5px rgba(0,0,0,0.58);
+}
+
+.liste p {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	margin: 0;
+}
+
+iframe {
+	border-radius: 3%;
+	width: 450px;
+	height: 253px;
+	margin-left: 30px;
+	margin-top: 25px;
+	margin-right: 20px;
+}
+.liste a {
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+}
+@media screen and (max-width: 1100px){
+	.pres {
+		flex-direction: column;
+	}
+	.liste div {
+		flex-direction: column;
+	}
+	iframe{
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+@media screen and (max-width: 550px){
+	.liste p {
+		flex-direction: column;
+	}
+	iframe {
+		width: 300px;
+		heigt: 169px;
+	}
+}
+.pres div h1 {
+	margin: 0;
+}
+.pres div {
+	max-width: 600px;
+}
+span {
+	color : #c0ab8f;
+}

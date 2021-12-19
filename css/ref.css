@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp');
+@font-face {
+	font-family: 'Ghotic';
+	src:  url("../data/font/gothicg_.ttf");
+}
+@font-face {
+	font-family: 'Ghotic2';
+	src:  url("../data/font/gothice_.ttf");
+}
+@font-face {
+	font-family: 'Ghotic3';
+	src:  url("../data/font/gothici_.ttf");
+}
+
+p {
+  font-size: 1.2em;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+html {
+	--body-bg-color : #345444; /*couleur de fond du site*/
+
+	--header-bg-color : rgb(0,0,0,0); /*Couleur de fond de la bare de navigation lorsqu'elle est en haut*/
+	--header-bg-color-scroll : #000; /*couleur de la bare de navigation quand on la descend*/
+	--header-bg-color-active : rgb(29,45,7,0.17); /*couleur de l'onglet lorsqu'on est sur la page*/
+	--header-bg-color-hover : #2E4053; /*couleur de l'onglet lorsque l'on passe la souris dessus*/
+	--header-font-color : #fff;/*Couleur de l'écriture de la bare de navigation*/
+	--header-font-color-hover : #ffffff;
+	--header-sub-font-color-hover:  #a0a0a0;
+	--header-font-color-hover-scroll : #fff; /*Couleur de l'écriture lorsque l'on passe la souris dessus et que la page n'est pas en haut*/
+	--header-bg-color-hover-scroll : #555; /*COuleur fond ecriture page pas en haut lorsqu'on passe la souris dessus*/
+  --footer-bg-color : #088028; /*couleur de fond du pied de page*/
+
+  --fb-color : blue;
+  --mail-color : black;
+  --insta-color : pink;
+  --yt-color : red;
+}
+
+body {
+	margin: 0;
+	width: 100%;
+	background-color: var(--body-bg-color);
+	/*background-image: url(./../data/catap2.png);*/
+	background-size: 500px;
+}
+
+body main {
+	margin-top: 100px;
+}
+
+.titre {
+	font-family: 'Ghotic','MedievalSharp', arial;
+}
+
+.citation {
+	font-family: 'Brush Script MT', cursive;
+}
+
+h1 {
+	font-family: 3em;
+	padding-left: 1em;
+	font-family: 'Ghotic2','MedievalSharp', arial;
+	color: #c0ab8f;
+}
+h2 {
+	font-family: 2.5em;
+	padding-left: 1em;
+	font-family: 'Ghotic2','MedievalSharp', arial;
+	color: #c0ab8f;
+}

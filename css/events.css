@@ -1,0 +1,27 @@
+main {
+	text-align: center;
+}
+
+main .events .tonus {
+	border-radius: 2%;
+	height: 40rem;
+}
+
+main .events .go {
+	display: block;
+	text-decoration: none;
+	color: white;
+	border-width: 1px;
+	border-radius: 10%;
+}
+
+main .event .go:hover{
+	background-color: lightgrey;
+} 
+
+@media screen and (max-width: 500px){
+	.tonus {
+		width: 90vw;
+		height: 126vw !important; 
+	}
+}
